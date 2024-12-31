@@ -1,37 +1,65 @@
-import { Tabs } from 'expo-router';
-import React from 'react';
+import { View, Text } from "react-native";
+import React from "react";
+import { Stack, Tabs } from "expo-router";
+import FontAwesome from "@expo/vector-icons/FontAwesome";
+import Feather from "@expo/vector-icons/Feather";
 
-import { TabBarIcon } from '@/components/navigation/TabBarIcon';
-import { Colors } from '@/constants/Colors';
-import { useColorScheme } from '@/hooks/useColorScheme';
-
-export default function TabLayout() {
-  const colorScheme = useColorScheme();
-
+export default function layout() {
   return (
     <Tabs
-      screenOptions={{
-        tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
-        headerShown: false,
-      }}>
+      screenOptions={{ tabBarActiveTintColor: "black", headerShown: false }}
+    >
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Home',
-          tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'home' : 'home-outline'} color={color} />
+          title: "Home",
+          tabBarIcon: ({ color }) => (
+            <FontAwesome size={28} name="home" color={color} />
           ),
         }}
       />
+
       <Tabs.Screen
-        name="explore"
+        name="uploadImage"
         options={{
-          title: 'Explore',
-          tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'code-slash' : 'code-slash-outline'} color={color} />
+          title: "upload",
+          tabBarIcon: ({ color }) => (
+            <Feather size={28} name="upload" color={color} />
+          ),
+        }}
+      />
+
+      <Tabs.Screen
+        name="profile"
+        options={{
+          title: "profile",
+          tabBarIcon: ({ color }) => (
+            <FontAwesome size={28} name="user" color={color} />
           ),
         }}
       />
     </Tabs>
+
+    // <Stack>
+    // <Stack.Screen
+    //   name='index'
+    //   options={{
+    //     headerShown:false,
+
+    //   }}
+
+    //   />
+
+    //   <Stack.Screen
+    //   name='Images'
+    //   options={{
+    //     headerShown:false,
+    //     presentation:'transparentModal',
+    //     animation:'fade'
+
+    //   }}
+
+    //   />
+    // </Stack>
   );
 }
