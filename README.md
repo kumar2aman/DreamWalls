@@ -1,8 +1,17 @@
-# Welcome to your Expo app 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+<<<<<<< HEAD
+# DreamWalls
+=======
+# Welcome to your DreamWalls app 👋
+
+This is a Wallpaper app  project created with react native expo (https://www.npmjs.com/package/create-expo-app).
 
 ## Get started
+
+ Note:- you need a supabase account, and add your supabaseUrl and supabaseAnonKey to lib/supabase.ts
+      link to signup in supabase - [https://supabase.com/] 
+
+   
 
 1. Install dependencies
 
@@ -13,8 +22,16 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
 2. Start the app
 
    ```bash
-    npx expo start
+   npm start
+     
    ```
+    or
+
+      ```bash
+     npx expo start
+     
+   ```
+   
 
 In the output, you'll find options to open the app in a
 
@@ -25,15 +42,8 @@ In the output, you'll find options to open the app in a
 
 You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
-## Get a fresh project
 
-When you're ready, run:
 
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
 ## Learn more
 
@@ -44,7 +54,8 @@ To learn more about developing your project with Expo, look at the following res
 
 ## Join the community
 
-Join our community of developers creating universal apps.
+Join our community of developers creating universal app.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- [DreamWalls on GitHub](https://github.com/kumar2aman/DreamWalls.git): View our open source platform and contribute.
+
+>>>>>>> a4c760e (Initial commit)
